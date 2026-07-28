@@ -1,0 +1,11 @@
+.env
+.env.backup
+.checkpoint.json
+venv/
+output.csv
+__pycache__/
+*.pyc
+check_asin.py.save
+.DS_Store
+.claude/
+*.zip
