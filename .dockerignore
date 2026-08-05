@@ -1,0 +1,12 @@
+venv/
+.env
+.env.backup
+.env.example
+__pycache__/
+*.pyc
+.git/
+.claude/
+output.csv
+asins.csv
+*.zip
+*.pdf
