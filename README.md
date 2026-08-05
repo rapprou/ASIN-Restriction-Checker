@@ -121,3 +121,12 @@ If interrupted, just re-run — the `.checkpoint.json` file tracks progress and 
 - SP-API restriction endpoint reflects the state at call time — restrictions can change.
 - No support for batch requests (the restrictions endpoint is per-ASIN).
 - Access scoped to a single marketplace per run; re-run with a different `MARKETPLACE_ID` for other regions.
+
+## V2 — REST API (in progress)
+
+A FastAPI wrapper around the same SP-API logic is currently in development, adding:
+- JWT-authenticated REST endpoints (`POST /login`, `POST /check-asin`)
+- PostgreSQL-backed 24h result caching (raw SQL, no ORM)
+- Docker Compose setup (API + PostgreSQL containers)
+
+See [`CLAUDE.md`](./CLAUDE.md) for architecture details and setup instructions.
